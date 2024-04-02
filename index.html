@@ -3,44 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Fatma Bostan</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" href="favicon.ico" />
 </head>
-<body id="gradient-color">
-    <div style="height: 70vh;">
-    <nav>
-        <a href="/">Portfolio</a>
-        <div id="main">
-            <ul>
-            <li><a>About</a></li>
-            <li><a>Experience</a></li>
-            <li><a>Projects</a></li>
-            <li><a>Contact</a></li>
+<body>
+    <nav class="navbar">
+        <a href="/" class="title">Portfolio</a>
+        <div class="menu">
+        <img src="./images/bars-solid.svg" class="menuBtn" height="30px" onclick="menuFunc()" />
+            <ul class="items onOff">
+                <li class="item"><a href="#about">About</a></li>
+                <li class="item"><a href="#experience" >Experience</a></li>
+                <li class="item"><a href="#projects">Projects</a></li>
+                <li class="item"><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
-    <div class="info-sec">
+    <section class="greet-sec">
+        <img src="./images/avatar.jpeg" alt="me" />
         <div>
-        <h1>Hi, I'm Fatma</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et 
-            nunc molestie, sodales urna id, interdum ante. Suspendisse gravida orci magna, et pulvinar orci 
-            dictum gravida. Phasellus varius cursus hendrerit.
-        </p></div>
-        <img src="./images/avatar.jpeg" alt="3d-avatar.jpg" width="100%" style="border-radius: 50%;"/>
-    </div>
-</div>
-    
-    <div class="about-sec"> 
-        <h2>ABOUT</h2>
-        <div class="context-sec">
-            <img src="./images/play-computer.jpeg" alt="play-computer.jpeg" width="70%">
-            <div class="known-sec">
-                <div class="sec1"><h3>Backend Development</h3></div>
-                <div class="sec2"><h3>CyberSecurity </h3></div>
-                <div class="sec3"><h3>Kotlin</h3></div>
-            </div>
+            <h1 class="greet-title">Hi, I'm Fatma</h1>
+            <p class="greet-content">It's important to note that using innerHTML to 
+            set content replaces any existing content within the element. 
+            So if you have some content.</p>
+            <a href="mailto:fatma_bostan_@outlook.com" class="ContactBtn">Contact Me</a>
         </div>
-    </div>
+    </section>
+    <script>
+        function menuFunc(){
+            var element =  document.querySelector(".items");
+            element.classList.toggle("onOff") ? document.querySelector('.menuBtn').src = './images/bars-solid.svg' 
+        : document.querySelector('.menuBtn').src = './images/xmark-solid.svg';
+     }
+    </script>
 </body>
 </html>
