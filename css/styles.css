@@ -102,7 +102,7 @@ html{
 
 /* SECTION 2 */
 .about-sec{
-    margin: 130px 10%;
+    margin: 130px 10% 0 10%;
     border-radius: 20px;
     background-color: rgb(59, 47, 47);
     color: white;
@@ -129,7 +129,7 @@ html{
 }
 
 .about-item img{
-    width: 12%;
+    width: 80px;
 }
 
 .about-item{
@@ -157,6 +157,81 @@ html{
     font-family: "Roboto", sans-serif;
     font-size: 20px;
 }
+
+/* SECTION 3*/
+.techItem div img,
+.experienceItem img{
+    width: 50px;
+}
+
+.ex-tech{
+    display: flex;
+    margin: 130px 10% 0 10%;
+    gap: 50px;
+}
+
+.techItems{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.techItems > div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.techItem{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.techItem div{
+    background: rgb(220, 250, 215);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.techItem img{
+margin-top: 40px;
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.experienceItems{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experienceItem{
+    display: flex;
+    gap: 10px;
+}
+
+
+.sec3Title{
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:830px){
     .navbar{
@@ -228,11 +303,17 @@ html{
     .about-items{
         margin-top: 10px;
     }
+
+    .about-item img{
+        width: 200px;
+    }
     
     .about-title{
-        text-align: center;
         font-size: 50px;
     }
    
+    #technologies h2{
+        font-size: 50px;
+    }
    
 }
