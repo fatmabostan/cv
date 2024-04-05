@@ -177,6 +177,7 @@ html{
 .sec3-content{
     display: flex;
     margin-top: 14px;
+    gap: 50px;
 }
 
 .sec3-content > div{
@@ -227,7 +228,8 @@ html{
 
 .sec3-experienceItem{
     display: flex;
-    gap: 10px;
+    align-items: center;
+    gap: 20px;
 }
 
 @media screen and (max-width: 790px){
@@ -258,6 +260,10 @@ html{
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .sec3-experienceItems{
+        align-items: center;
     }
 }
 
