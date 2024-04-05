@@ -126,7 +126,7 @@ html{
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .about-item img{
@@ -163,7 +163,7 @@ html{
 /* SECTION 3*/
 .sec3-container{
     color: white;
-    margin: 80px 10% 0 10%;
+    margin: 80px 15% 0 15%;
 }
 
 .sec3-title{
@@ -177,17 +177,13 @@ html{
 .sec3-content{
     display: flex;
     margin-top: 14px;
-    gap: 40px;
-}
-
-.sec3-content > div{
-   width: 50%;
 }
 
 .sec3-skills{
     display: flex;
     flex-wrap: wrap;
     gap: 37px;
+    width: 85%;
 }
 
 .sec3-skill{
@@ -213,12 +209,50 @@ html{
     font-family: "Roboto", sans-serif;
 }
 
+.sec3-experience{
+    width: 90%;
+}
 
+.sec3-experienceItems{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 
+.sec3-experienceItem{
+    display: flex;
+    gap: 10px;
+}
 
+@media screen and (max-width: 790px){
+    .sec3-container{
+        margin: 30px 0 0 3%;
+    }
+    .sec3-content{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
 
+    .sec3-content > div {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
 
+    .sec3-skills{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        width: 85%;
+    }
 
+    .sec3-experienceItemDetails{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 
 
 
