@@ -179,11 +179,17 @@ html{
     margin-top: 14px;
 }
 
+.sec3-content > div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .sec3-skills{
     display: flex;
     flex-wrap: wrap;
     gap: 37px;
-    width: 85%;
+    width: auto;
 }
 
 .sec3-skill{
@@ -244,7 +250,8 @@ html{
         display: flex;
         flex-wrap: wrap;
         gap: 40px;
-        width: 85%;
+        justify-content: center;
+        width: auto;
     }
 
     .sec3-experienceItemDetails{
