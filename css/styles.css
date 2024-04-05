@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(114, 64, 162);
+    background-color: #5F3367;
     margin: 0;
     width: 100%;   
 }
@@ -43,7 +43,7 @@ html{
 .items a{
     text-decoration: none;
     font-size: 25px;
-    color: white
+    color: white;
 }
 
 .menuBtn{
@@ -89,7 +89,7 @@ html{
 .ContactBtn{
     font-family: "Roboto", sans-serif;
     text-decoration: none;
-    background-color: cyan;
+    background-color: #774181;
     color: white;
     text-align: center;
     border-radius: 100px;
@@ -102,9 +102,9 @@ html{
 
 /* SECTION 2 */
 .about-sec{
-    margin: 130px 10% 0 10%;
+    margin: 79px 10% 0 10%;
     border-radius: 20px;
-    background-color: rgb(59, 47, 47);
+    background-color: #29162D;
     color: white;
     padding: 25px;
 }
@@ -163,7 +163,7 @@ html{
 /* SECTION 3*/
 .sec3-container{
     color: white;
-    margin: 80px 15% 0 15%;
+    margin: 79px 10% 0 10%;
 }
 
 .sec3-title{
@@ -201,7 +201,7 @@ html{
 }
 
 .sec3-skillImage{
-    background-color: chartreuse;
+    background-color: #774181;
     width: 120px;
     height: 120px;
     border-radius: 100%;
@@ -230,6 +230,55 @@ html{
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.contact-link img{
+    width: 45px;
+}
+
+.footer-container{
+    margin-top: 120px;
+    background-color: #774181;
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 58px 10%;
+    gap: 10px;
+}
+
+.contact-title h2{
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.contact-title p{
+font-size: 40px;
+font-weight: 400;
+letter-spacing: 2px;
+}
+
+.contact-links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style: none;
+    gap: 20px
+}
+
+.contact-link{
+    display: flex;
+    align-items: center;
+    gap:25px;
+}
+
+.contact-link a{
+    color: white; 
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1.5;
 }
 
 @media screen and (max-width: 830px){
@@ -262,6 +311,21 @@ html{
     }
 
     .sec3-experienceItems{
+        align-items: center;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        gap: 23px;
+    }
+
+    .contact-title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-links{
         align-items: center;
     }
 }
