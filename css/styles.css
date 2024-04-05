@@ -270,7 +270,7 @@ letter-spacing: 2px;
 .contact-link{
     display: flex;
     align-items: center;
-    gap:25px;
+    gap: 25px;
 }
 
 .contact-link a{
@@ -278,7 +278,7 @@ letter-spacing: 2px;
     text-decoration: none;
     font-size: 30px;
     font-weight: 400;
-    letter-spacing: 1.5;
+    letter-spacing: 1.5px;
 }
 
 @media screen and (max-width: 830px){
@@ -323,10 +323,17 @@ letter-spacing: 2px;
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
-    
+
     .contact-links{
+        display: flex;
+        flex-direction: column;
         align-items: center;
+    }
+
+    .contact-link a{
+        font-size: 20px;
     }
 }
 
