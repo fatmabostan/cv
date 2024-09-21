@@ -136,6 +136,7 @@ html{
 
 .about-item{
     display: flex;
+    flex-direction: row;
     gap: 10px;
     background: linear-gradient(90deg, rgba(251, 251, 251, 0.403) 0%, rgba(182, 23, 179, 0.249) 100%);
     background-size: 0 100%;
@@ -419,7 +420,7 @@ letter-spacing: 2px;
     }
 
     .about-item img{
-        width: 200px;
+        width: 0px;
     }
     
     .about-title{
