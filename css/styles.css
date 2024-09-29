@@ -179,7 +179,7 @@ html{
 .sec3-content{
     display: flex;
     margin-top: 14px;
-    gap: 50px;
+    gap: 6%;
 }
 
 .sec3-content > div{
